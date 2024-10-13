@@ -1,1 +1,28 @@
+#include <stdio.h>
 
+int main() {
+     
+	 int n,a =1, b=1,c,i,t;
+	
+	scanf("%d",&n);
+	int numbers[n];
+	 for(t=0;t<n;t++){
+	 	scanf("%d",&numbers[t]);
+		 }
+		 
+		 for(t=0;t<n;t++){
+		 	i=2;
+		 	a=b=1;	
+		    for (i=2;i<numbers[t];i++)	{
+		 	
+		 	c=a+b;
+		 	a=b;
+		 	b=c;
+		    }  
+		 printf("%d\n",b);
+		}
+	
+		
+
+	return 0;
+}
