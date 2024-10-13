@@ -1,1 +1,18 @@
+#include <stdio.h>
 
+int main() {
+    for (int i = 100; i <1000; i++) {
+        int a = 0;
+        int x = i; 
+
+        while ( x> 0) {
+            int d = x% 10; 
+            a+= d * d * d; 
+            x /= 10; 
+        }
+        if (a==i) {
+            printf("%d ", i);
+        }
+    }
+    return 0;
+}
